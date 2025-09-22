@@ -1,0 +1,586 @@
+{% extends "layouts/main.html" %} 
+
+{% set currentPage = "calendar-of-tasks" %} 
+
+{% block pageTitle %} 
+  Calendar of tasks – {{ serviceName }} – GOV.UK Prototype Kit 
+{% endblock %} 
+
+{% block beforeContent %} 
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">Beta</strong>
+      <span class="govuk-phase-banner__text">This is a new service. Help us improve it and <a class="govuk-link" href="#" target="_blank">give your feedback (opens in a new tab).</a>
+      </span>
+    </p>
+  </div>
+  {{ govukBreadcrumbs({
+      items: [
+        {
+          text: "Home",
+          href: "/index"
+        },
+        {
+          text: "Calendar of tasks"
+        }
+      ]
+    }) }}
+{% endblock %} 
+
+{% block content %} 
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters">
+      <span class="govuk-caption-l">Academy Name</span>
+      <h1 class="govuk-heading-l">Calendar of tasks</h1>
+      <p class="govuk-body-l">These are all of the required tasks that you must complete for your school each month.</p>
+    </div>
+  </div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters govuk-prototype-kit-common-templates-mainstream-guide-body">
+      <nav class="moj-sub-navigation" aria-label="Sub navigation">
+        <ul class="moj-sub-navigation__list">
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link tab-link" aria-current="page" href="#upcoming-tasks">Upcoming tasks</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link tab-link" href="#previous-tasks">Previous tasks</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="calendar tab-content active" id="upcoming-tasks">
+        <div class="calendar-section-heading">
+          <h2 class="govuk-heading-m">Upcoming tasks</h2>
+          <span class="govuk-caption-s">Last updated: 2 September 2025</span>
+        </div>
+        <div class="calendar month">
+          <h3 class="govuk-heading-s">September 2025</h3>
+          <ul class="govuk-task-list">
+            <li class="govuk-task-list__item govuk-task-list__item--with-link funding">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="task/pe-sport-premium"> PE and sport premium </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">Check the PE and sport premium conditions of grant document for any changes</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Available Sep 2025</span>
+                </div>
+              </div>
+            </li>
+            <li class="govuk-task-list__item govuk-task-list__item--with-link funding">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="task/pe-sport-premium"> PE and sport premium </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">Check the PE and sport premium guidance for changes</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Available Sep 2025</span>
+                </div>
+              </div>
+              <div class="govuk-task-list__status">
+                <!-- <strong class="govuk-tag govuk-tag--blue">
+                    Incomplete
+                  </strong> -->
+              </div>
+            </li>
+            <li class="govuk-task-list__item govuk-task-list__item--with-link funding">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="task/core-maths-premium.html"> Core maths premium </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">Check the allocation calculation toolkit</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Available Sep 2025</span>
+                </div>
+              </div>
+              <div class="govuk-task-list__status">
+                <!-- <strong class="govuk-tag govuk-tag--blue">
+                    Incomplete
+                  </strong> -->
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="calendar month">
+          <h3 class="govuk-heading-s">October 2025</h3>
+          <ul class="govuk-task-list">
+            <li class="govuk-task-list__item govuk-task-list__item--with-link funding">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="task/pe-sport-premium"> PE and sport premium </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">Check your PE and sport premium allocation</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Available Oct 2025</span>
+                </div>
+              </div>
+            </li>
+            <li class="govuk-task-list__item govuk-task-list__item--with-link funding pupils">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="#"> High needs place changes </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">Agree changes to your high needs places for 2026 to 2027 with your local authority</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Available Oct 2025</span>
+                </div>
+              </div>
+            </li>
+            <li class="govuk-task-list__item govuk-task-list__item--with-link finance pupils">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="#"> School census </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">Amend your autumn school cenus data, if needed</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Available Oct 2025</span>
+                </div>
+              </div>
+            </li>
+            <li class="govuk-task-list__item govuk-task-list__item--with-link finance handbook">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="#"> School resource management self-assessment checklist (SRMSAC) </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">Check the school resource management self-assessment checklist guidance for any changes</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Available Oct 2025</span>
+                </div>
+              </div>
+            </li>
+            <li class="govuk-task-list__item govuk-task-list__item--with-link finance pupils">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="#"> School census </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">Complete your autumn school census return</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Due 29 Oct 2025</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="calendar month">
+          <h3 class="govuk-heading-s">November 2025</h3>
+          <ul class="govuk-task-list">
+            <li class="govuk-task-list__item govuk-task-list__item--with-link funding">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="#"> High value courses premium </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">Check the allocation calculation toolkit</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Available Nov 2025</span>
+                </div>
+              </div>
+            </li>
+            <li class="govuk-task-list__item govuk-task-list__item--with-link finance">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="#"> Land and buildings collection tool (LBCT) </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">Complete the land and buildings collection tool</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Due Nov 2025</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="calendar month">
+          <h3 class="govuk-heading-s">December 2025</h3>
+          <ul class="govuk-task-list">
+            <li class="govuk-task-list__item govuk-task-list__item--with-link funding pupils">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="#"> Pupil premium </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">Publish your updated pupil premium strategy statement on your school's website</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Due 31 Dec 2025</span>
+                </div>
+              </div>
+            </li>
+            <li class="govuk-task-list__item govuk-task-list__item--with-link funding">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="#"> Condition Improvement Fund (CIF) </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">Apply for the Condition Improvement Fund for 2026 to 2027 if you're eligible (optional)</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Due Dec 2025</span>
+                </div>
+              </div>
+              <div class="govuk-task-list__status">
+                <!-- <strong class="govuk-tag govuk-tag--blue">
+                    Incomplete
+                  </strong> -->
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="calendar month">
+          <h3 class="govuk-heading-s">February 2026</h3>
+          <ul class="govuk-task-list">
+            <li class="govuk-task-list__item govuk-task-list__item--with-link funding">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="#"> Teaching internships programme </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">Submit your expenditure declaration</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Due 14 Feb 2026</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="calendar month">
+          <h3 class="govuk-heading-s">July 2026</h3>
+          <ul class="govuk-task-list">
+            <li class="govuk-task-list__item govuk-task-list__item--with-link funding">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="task/pe-sport-premium"> PE and sport premium </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">Complete the PE and sport premium expenditure reporting return</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Due 31 Jul 2026</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="calendar tab-content" id="previous-tasks">
+        <div class="calendar-section-heading">
+          <h2 class="govuk-heading-m">Previous tasks</h2>
+          <span class="govuk-caption-s">Last updated: 2 September 2025</span>
+        </div>
+        <div class="calendar month">
+          <h3 class="govuk-heading-s">September 2025</h3>
+          <ul class="govuk-task-list">
+            <li class="govuk-task-list__item govuk-task-list__item--with-link finance handbook">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="#"> Academy Trust Handbook updates </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">Read the updated Academy Trust Handbook and take any actions you need to stay compliant</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Due 1 Sep 2025</span>
+                </div>
+              </div>
+            </li>
+            <li class="govuk-task-list__item govuk-task-list__item--with-link finance handbook">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="#"> Academy Trust Handbook updates </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">Share the updated Academy Trust Handbook with your trustees</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Due 1 Sep 2025</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="calendar month">
+          <h3 class="govuk-heading-s">August 2025</h3>
+          <ul class="govuk-task-list">
+            <li class="govuk-task-list__item govuk-task-list__item--with-link finance handbook">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="#"> Budget forecast return (BFR) </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">Prepare for and submit your budget forecast return (BFR)</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Due 28 Aug 2025</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="calendar month">
+          <h3 class="govuk-heading-s">July 2025</h3>
+          <ul class="govuk-task-list">
+            <li class="govuk-task-list__item govuk-task-list__item--with-link funding">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="task/pe-sport-premium"> PE and sport premium </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">Publish your PE and sport premium funding report on your school or trust's website</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Due 31 Jul 2025</span>
+                </div>
+              </div>
+            </li>
+            <li class="govuk-task-list__item govuk-task-list__item--with-link funding">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="#"> Teaching internships programme </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">Submit your Management Information (MI) spreadsheet and grant expenditure declaration forms</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Due 25 Jul 2025</span>
+                </div>
+              </div>
+            </li>
+            <li class="govuk-task-list__item govuk-task-list__item--with-link funding pupils">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="#"> Universal infant free school meals </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">Check your final universal infant free school meals allocation</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Available Jul 2025</span>
+                </div>
+              </div>
+            </li>
+            <li class="govuk-task-list__item govuk-task-list__item--with-link funding">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="#"> Advanced maths premium </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">Check the allocation calculation toolkit</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Available Jul 2025</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="calendar month">
+          <h3 class="govuk-heading-s">June 2025</h3>
+          <ul class="govuk-task-list">
+            <li class="govuk-task-list__item govuk-task-list__item--with-link funding pupils">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="#"> Universal infant free school meals </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">Check the universal infant free school meals conditions of grant document for any changes</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Available 24 Jun 2025</span>
+                </div>
+              </div>
+            </li>
+            <li class="govuk-task-list__item govuk-task-list__item--with-link funding pupils">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="#"> Universal infant free school meals </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">Check your provisional universal infant free school meals allocation</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Available 24 Jun 2025</span>
+                </div>
+              </div>
+            </li>
+            <li class="govuk-task-list__item govuk-task-list__item--with-link finance pupils">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="#"> School census </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">Complete your summer school census return</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Due 11 Jun 2025</span>
+                </div>
+              </div>
+            </li>
+            <li class="govuk-task-list__item govuk-task-list__item--with-link funding">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="#"> Emergency school improvement fund (non-capital) </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">View eligibility criteria to apply for the emergency school improvement fund (optional)</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Available Jun 2025</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="calendar month">
+          <h3 class="govuk-heading-s">May 2025</h3>
+          <ul class="govuk-task-list">
+            <li class="govuk-task-list__item govuk-task-list__item--with-link finance">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="#"> Audited financial statements </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">Send your audited accounts to Companies House</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Due 31 May Jun 2025</span>
+                </div>
+              </div>
+              <div class="govuk-task-list__status">
+                <!-- <strong class="govuk-tag govuk-tag--blue">
+                    Incomplete
+                  </strong> -->
+              </div>
+            </li>
+            <li class="govuk-task-list__item govuk-task-list__item--with-link">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="#"> Teaching internships programme </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">Submit your Management Information (MI) spreadsheet</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Due 25 May 2025</span>
+                </div>
+              </div>
+            </li>
+            <li class="govuk-task-list__item govuk-task-list__item--with-link funding">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="#"> Core schools budget grant (CSBG) </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">Check your core schools budget grant payment if you're a mainstream school</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Available 22 May 2025</span>
+                </div>
+              </div>
+            </li>
+            <li class="govuk-task-list__item govuk-task-list__item--with-link funding">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="#"> Teachers' pay additional grant (TPAG) </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">Check your teachers' pay additional grant payment if you're a mainstream school</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Available May 2025</span>
+                </div>
+              </div>
+            </li>
+            <li class="govuk-task-list__item govuk-task-list__item--with-link finance pupils">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="#"> School census </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">Amend your summer school census data, if needed</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Available May 2025</span>
+                </div>
+              </div>
+            </li>
+            <li class="govuk-task-list__item govuk-task-list__item--with-link funding">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="#"> Teachers' pension employer contribution grant (TPECG) </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">Check your teachers' pension employer contribution grant payment if you're a mainstream school</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Available May 2025</span>
+                </div>
+              </div>
+              <div class="govuk-task-list__status">
+                <!-- <strong class="govuk-tag govuk-tag--blue">
+                    Incomplete
+                  </strong> -->
+              </div>
+            </li>
+            <li class="govuk-task-list__item govuk-task-list__item--with-link">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="#"> Maths and English funding </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">Check the allocation calculation toolkit</span>
+                </div>
+                <div class="date-card">
+                  <span class="govuk-body-s">Available May 2025</span>
+                </div>
+              </div>
+              <div class="govuk-task-list__status">
+                <!-- <strong class="govuk-tag govuk-tag--blue">
+                    Incomplete
+                  </strong> -->
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-quarter">
+      <aside class="govuk-prototype-kit-common-templates-related-items" role="complementary">
+        <div class="filter-sidebar">
+          <div class="filter-header">
+            <h2 class="govuk-heading-s">Filter</h2>
+          </div>
+          <div class="filter-selection">
+            <h2 class="govuk-heading-s">Selected filters</h2>
+            <div class="selected-filters-container">
+              <!-- Selected filters appear here -->
+            </div>
+          </div>
+          <div class="filter-main">
+            <div class="govuk-form-group category">
+              <fieldset class="govuk-fieldset">
+                <details class="govuk-details">
+                  <summary class="govuk-details__summary">
+                    <span class="govuk-details__summary-text">Category</span>
+                  </summary>
+                  <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="handbook" name="handbook" type="checkbox" value="handbook">
+                      <label class="govuk-label govuk-checkboxes__label" for="handbook">Academy Trust Handbook</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="estates" name="estates" type="checkbox" value="estates">
+                      <label class="govuk-label govuk-checkboxes__label" for="estates">Estates</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="finance" name="finance" type="checkbox" value="finance">
+                      <label class="govuk-label govuk-checkboxes__label" for="finance">Finance</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="funding" name="funding" type="checkbox" value="funding">
+                      <label class="govuk-label govuk-checkboxes__label" for="funding">Funding</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="procurement" name="procurement" type="checkbox" value="procurement">
+                      <label class="govuk-label govuk-checkboxes__label" for="procurement">Procurement</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="pupils" name="pupils" type="checkbox" value="pupils">
+                      <label class="govuk-label govuk-checkboxes__label" for="pupils">Pupils</label>
+                    </div>
+                  </div>
+                </details>
+              </fieldset>
+            </div>
+            <div class="govuk-form-group category">
+              <fieldset class="govuk-fieldset">
+                <details class="govuk-details">
+                  <summary class="govuk-details__summary">
+                    <span class="govuk-details__summary-text">Type</span>
+                  </summary>
+                  <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="mandatory" name="mandatory" type="checkbox" value="mandatory">
+                      <label class="govuk-label govuk-checkboxes__label" for="mandatory">Mandatory</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="optional" name="optional" type="checkbox" value="optional">
+                      <label class="govuk-label govuk-checkboxes__label" for="optional">Optional</label>
+                    </div>
+                  </div>
+                </details>
+              </fieldset>
+            </div>
+            <div class="govuk-button-group">
+              <button type="button" class="govuk-button" id="apply-filters">Apply filters</button>
+              <a class="govuk-link clear-all-link" href="#">Clear all</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-sidebar">
+          <h2 class="govuk-heading-s" id="subsection-title"> Contact us </h2>
+          <details class="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text"> Contact us for help </span>
+            </summary>
+            <div class="govuk-details__text"> Contact us using the <a href="https://customerhelpportal.education.gov.uk/" target="_blank">customer help portal (opens in a new tab)</a>. </div>
+          </details>
+        </div>
+      </aside>
+    </div>
+    </main>
+  </div>
+{% endblock %}

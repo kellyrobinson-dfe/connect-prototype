@@ -1,0 +1,342 @@
+{% extends "layouts/main.html" %}
+
+{% set currentPage = "change-setting" %}
+
+{% block pageTitle %}
+  Change your setting – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+          <strong class="govuk-tag govuk-phase-banner__content__tag">Beta</strong>
+          <span class="govuk-phase-banner__text">This is a new service. Help us improve it and <a class="govuk-link" href="#" target="_blank">give your feedback (opens in a new tab).</a></span>
+      </p>
+  </div>
+
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "/index"
+      },
+      {
+        text: "Change your setting"
+      }
+    ]
+  }) }}
+
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters page-header">
+      <!-- <span class="govuk-caption-l">Academy Name</span> -->
+      <h1 class="govuk-heading-l">Change your setting</h1>
+      <p class="govuk-body-l">View DfE Connect as an academy or as a trust overall.</p>
+      <div class="govuk-inset-text">
+        <p class="govuk-body-m">Currently viewing DfE Connect as: Academy Name Location</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters govuk-prototype-kit-common-templates-mainstream-guide-body">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">Which setting would you like to view as?
+              <span class="govuk-body-m change-hint">Showing 92 settings</span>
+            </h2>
+          </legend>
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="whereDoYouLive" name="whereDoYouLive" type="radio" value="england">
+              <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
+                <strong>Academy Name 1</strong>
+                <span class="govuk-body-s change-hint">Location: 1 Fictional Street, City, AB12 3CD</span>
+                <span class="govuk-body-s change-hint">URN: 010101, UKPRN: 01010101, UPN: 010101</span>
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="whereDoYouLive" name="whereDoYouLive" type="radio" value="england">
+              <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
+                <strong>Academy Name 2</strong>
+                <span class="govuk-body-s change-hint">Location: 2 Fictional Street, City, AB12 3CD</span>
+                <span class="govuk-body-s change-hint">URN: 020202, UKPRN: 02020202, UPN: 020202</span>
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="whereDoYouLive" name="whereDoYouLive" type="radio" value="england">
+              <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
+                <strong>Academy Name 3</strong>
+                <span class="govuk-body-s change-hint">Location: 3 Fictional Street, City, AB12 3CD</span>
+                <span class="govuk-body-s change-hint">URN: 030303, UKPRN: 03030303, UPN: 030303</span>
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="whereDoYouLive" name="whereDoYouLive" type="radio" value="england">
+              <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
+                <strong>Academy Name 4</strong>
+                <span class="govuk-body-s change-hint">Location: 4 Fictional Street, City, AB12 3CD</span>
+                <span class="govuk-body-s change-hint">URN: 040404, UKPRN: 04040404, UPN: 040404</span>
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="whereDoYouLive" name="whereDoYouLive" type="radio" value="england">
+              <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
+                <strong>Academy Name 5</strong>
+                <span class="govuk-body-s change-hint">Location: 5 Fictional Street, City, AB12 3CD</span>
+                <span class="govuk-body-s change-hint">URN: 050505, UKPRN: 05050505, UPN: 050505</span>
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="whereDoYouLive" name="whereDoYouLive" type="radio" value="england">
+              <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
+                <strong>Academy Name 6</strong>
+                <span class="govuk-body-s change-hint">Location: 6 Fictional Street, City, AB12 3CD</span>
+                <span class="govuk-body-s change-hint">URN: 060606, UKPRN: 06060606, UPN: 060606</span>
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="whereDoYouLive" name="whereDoYouLive" type="radio" value="england">
+              <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
+                <strong>Academy Name 7</strong>
+                <span class="govuk-body-s change-hint">Location: 7 Fictional Street, City, AB12 3CD</span>
+                <span class="govuk-body-s change-hint">URN: 070707, UKPRN: 07070707, UPN: 070707</span>
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="whereDoYouLive" name="whereDoYouLive" type="radio" value="england">
+              <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
+                <strong>Academy Name 8</strong>
+                <span class="govuk-body-s change-hint">Location: 8 Fictional Street, City, AB12 3CD</span>
+                <span class="govuk-body-s change-hint">URN: 080808, UKPRN: 08080808, UPN: 080808</span>
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="whereDoYouLive" name="whereDoYouLive" type="radio" value="england">
+              <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
+                <strong>Academy Name 9</strong>
+                <span class="govuk-body-s change-hint">Location: 9 Fictional Street, City, AB12 3CD</span>
+                <span class="govuk-body-s change-hint">URN: 090909, UKPRN: 09090909, UPN: 090909</span>
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="whereDoYouLive" name="whereDoYouLive" type="radio" value="england">
+              <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
+                <strong>Academy Name 10</strong>
+                <span class="govuk-body-s change-hint">Location: 10 Fictional Street, City, AB12 3CD</span>
+                <span class="govuk-body-s change-hint">URN: 101010, UKPRN: 10101010, UPN: 101010</span>
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="whereDoYouLive" name="whereDoYouLive" type="radio" value="england">
+              <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
+                <strong>Academy Name 11</strong>
+                <span class="govuk-body-s change-hint">Location: 11 Fictional Street, City, AB12 3CD</span>
+                <span class="govuk-body-s change-hint">URN: 110110, UKPRN: 110110110, UPN: 110110</span>
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="whereDoYouLive" name="whereDoYouLive" type="radio" value="england">
+              <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
+                <strong>Academy Name 12</strong>
+                <span class="govuk-body-s change-hint">Location: 12 Fictional Street, City, AB12 3CD</span>
+                <span class="govuk-body-s change-hint">URN: 121212, UKPRN: 12121212, UPN: 121212</span>
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="whereDoYouLive" name="whereDoYouLive" type="radio" value="england">
+              <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
+                <strong>Academy Name 13</strong>
+                <span class="govuk-body-s change-hint">Location: 13 Fictional Street, City, AB12 3CD</span>
+                <span class="govuk-body-s change-hint">URN: 131313, UKPRN: 13131313, UPN: 131313</span>
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="whereDoYouLive" name="whereDoYouLive" type="radio" value="england">
+              <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
+                <strong>Academy Name 14</strong>
+                <span class="govuk-body-s change-hint">Location: 14 Fictional Street, City, AB12 3CD</span>
+                <span class="govuk-body-s change-hint">URN: 141414, UKPRN: 14141414, UPN: 141414</span>
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="whereDoYouLive" name="whereDoYouLive" type="radio" value="england">
+              <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
+                <strong>Academy Name 15</strong>
+                <span class="govuk-body-s change-hint">Location: 15 Fictional Street, City, AB12 3CD</span>
+                <span class="govuk-body-s change-hint">URN: 151515, UKPRN: 15151515, UPN: 151515</span>
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <nav class="govuk-pagination" aria-label="Pagination">
+        <!-- <div class="govuk-pagination__prev">
+          <a class="govuk-link govuk-pagination__link" href="#" rel="prev">
+            <svg class="govuk-pagination__icon govuk-pagination__icon--prev" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+              <path d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+            </svg>
+            <span class="govuk-pagination__link-title">
+              Previous<span class="govuk-visually-hidden"> page</span>
+            </span>
+          </a>
+        </div> -->
+        <ul class="govuk-pagination__list">
+           <li class="govuk-pagination__item govuk-pagination__item--current">
+            <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 1" aria-current="page">
+              1
+            </a>
+          </li>
+          <li class="govuk-pagination__item">
+            <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 2">
+              2
+            </a>
+          </li>
+          <li class="govuk-pagination__item">
+            <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 3">
+              3
+            </a>
+          </li>
+        </ul>
+        <div class="govuk-pagination__next">
+          <a class="govuk-link govuk-pagination__link" href="#" rel="next">
+            <span class="govuk-pagination__link-title">
+              Next<span class="govuk-visually-hidden"> page</span>
+            </span>
+            <svg class="govuk-pagination__icon govuk-pagination__icon--next" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+              <path d="m8.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+            </svg>
+          </a>
+        </div>
+      </nav>
+      
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Save and continue
+      </button>
+    </div>
+    <div class="govuk-grid-column-one-quarter">
+      <aside class="govuk-prototype-kit-common-templates-related-items" role="complementary">
+        <div class="filter-sidebar">
+          <div class="filter-header">
+            <h2 class="govuk-heading-s">Filter</h2>
+          </div>
+          <div class="filter-selection">
+            <h2 class="govuk-heading-s">Selected filters</h2>
+            <div class="selected-filters-container">
+              <!-- Selected filters appear here -->
+            </div>
+          </div>
+          <div class="filter-main">
+            <div class="govuk-form-group category">
+              <fieldset class="govuk-fieldset">
+                <details class="govuk-details">
+                  <summary class="govuk-details__summary">
+                    <span class="govuk-details__summary-text">Keywords<br/>
+                    </span>
+                  </summary>
+                  <input class="govuk-input" id="searchby" name="searchby" type="text">
+                </details>
+              </fieldset>
+            </div>
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset">
+                <details class="govuk-details">
+                  <summary class="govuk-details__summary">
+                    <span class="govuk-details__summary-text">Sort by</span>
+                  </summary>
+                  <div class="govuk-radios govuk-radios--small" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="changedName" name="changedName" type="radio" value="month">
+                      <label class="govuk-label govuk-radios__label" for="changedName">
+                      Ascending
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="changedName" name="changedName" type="radio" value="month">
+                      <label class="govuk-label govuk-radios__label" for="changedName">
+                      Descending
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="changedName-2" name="changedName" type="radio" value="year">
+                      <label class="govuk-label govuk-radios__label" for="changedName-2">
+                      Most viewed
+                      </label>
+                    </div>
+                  </div>
+                </details>
+              </fieldset>
+            </div>
+            <div class="govuk-form-group category">
+              <fieldset class="govuk-fieldset">
+                <details class="govuk-details">
+                  <summary class="govuk-details__summary">
+                    <span class="govuk-details__summary-text">Region</span>
+                  </summary>
+                  <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="handbook" name="handbook" type="checkbox" value="handbook">
+                      <label class="govuk-label govuk-checkboxes__label" for="handbook">East Midlands (5)</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="estates" name="estates" type="checkbox" value="estates">
+                      <label class="govuk-label govuk-checkboxes__label" for="estates">Eastern (5)</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="finance" name="finance" type="checkbox" value="finance">
+                      <label class="govuk-label govuk-checkboxes__label" for="finance">London (23)</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="funding" name="funding" type="checkbox" value="funding">
+                      <label class="govuk-label govuk-checkboxes__label" for="funding">North East (0)</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="procurement" name="procurement" type="checkbox" value="procurement">
+                      <label class="govuk-label govuk-checkboxes__label" for="procurement">North West (18)</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="pupils" name="pupils" type="checkbox" value="pupils">
+                      <label class="govuk-label govuk-checkboxes__label" for="pupils">South East (17)</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="pupils" name="pupils" type="checkbox" value="pupils">
+                      <label class="govuk-label govuk-checkboxes__label" for="pupils">South West (9)</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="pupils" name="pupils" type="checkbox" value="pupils">
+                      <label class="govuk-label govuk-checkboxes__label" for="pupils">West Midlands (7)</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="pupils" name="pupils" type="checkbox" value="pupils">
+                      <label class="govuk-label govuk-checkboxes__label" for="pupils">Yorkshire and Humber (8)</label>
+                    </div>
+                  </div>
+                </details>
+              </fieldset>
+            </div>
+            <div class="govuk-button-group">
+              <button type="button" class="govuk-button" id="apply-filters">Apply filters</button>
+              <a class="govuk-link clear-all-link" href="#">Clear all</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-sidebar">
+          <h2 class="govuk-heading-s" id="subsection-title"> Contact us </h2>
+          <details class="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text"> Contact us for help </span>
+            </summary>
+            <div class="govuk-details__text"> Contact us using the <a href="https://customerhelpportal.education.gov.uk/" target="_blank">customer help portal (opens in a new tab)</a>. </div>
+          </details>
+        </div>
+      </aside>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

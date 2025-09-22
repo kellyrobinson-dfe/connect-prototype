@@ -1,0 +1,284 @@
+{% extends "layouts/main.html" %}
+
+{% set currentPage = "explore-categories" %}
+
+{% block pageTitle %}
+  Funding – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+          <strong class="govuk-tag govuk-phase-banner__content__tag">Beta</strong>
+          <span class="govuk-phase-banner__text">This is a new service. Help us improve it and <a class="govuk-link" href="#" target="_blank">give your feedback (opens in a new tab).</a></span>
+      </p>
+  </div>
+
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "/index"
+      },
+      {
+        text: "Explore categories",
+        href: "/explore-categories"
+      },
+      {
+        text: "Funding"
+      }
+    ]
+  }) }}
+
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters">
+      <span class="govuk-caption-l">Category</span>
+      <h1 class="govuk-heading-l">Funding</h1>
+      <p class="govuk-body-l">Your tasks for managing payments and funding opportunities.</p>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters govuk-prototype-kit-common-templates-mainstream-guide-body">
+      
+      <div class="explore-categories fullpage">
+        <h2 class="govuk-heading-m">Explore all funds and support</h2>
+        <ul class="govuk-task-list">
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                16 to 19 Bursary Funding
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Automatic fund</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                16 to 19 national funding formula
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Automatic fund</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Advanced maths premium
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Automatic fund</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Condition Improvement Fund (CIF)
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Requires application</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Connect the classroom funding
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">For specific academies</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="../task/core-maths-premium.html">
+                Core maths premium
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Automatic fund</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Core schools budget grant (CSBG)
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Automatic fund</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Early years initial teacher training
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">For specific academies</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Emergency school improvement fund (non-capital)
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Requires application</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                General Annual Grant (GAG)
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Automatic fund</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                High needs place changes
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Automatic fund</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                High value courses premium
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Automatic fund</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Maths and English funding
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Automatic fund</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                National professional qualifications (NPQ) funding
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">For specific academies</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="../task/pe-sport-premium.html">
+                PE and sport premium
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Automatic fund</span>
+              </div>
+            </div>
+          </li>
+           <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Pupil premium
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Automatic fund</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                T Level industry placement funding
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Automatic fund</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Teachers' pay additional grant (TPAG)
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Automatic fund</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Teachers' pension employer contribution grant (TPECG)
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Automatic fund</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Teaching internships programme
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">For specific academies</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Universal infant free school meals
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Automatic fund</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-quarter">
+      <aside class="govuk-prototype-kit-common-templates-related-items" role="complementary">
+        <h2 class="govuk-heading-s" id="subsection-title">
+          Contact us
+        </h2>
+        <details class="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Contact us for help
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          Contact us using the <a href="https://customerhelpportal.education.gov.uk/" target="_blank">customer help portal (opens in a new tab)</a>.
+        </div>
+      </details>
+      </aside>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

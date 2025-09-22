@@ -1,0 +1,172 @@
+{% extends "layouts/main.html" %}
+
+{% set currentPage = "core-maths-premium" %}
+
+{% block pageTitle %}
+  Core maths premium – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+          <strong class="govuk-tag govuk-phase-banner__content__tag">Beta</strong>
+          <span class="govuk-phase-banner__text">This is a new service. Help us improve it and <a class="govuk-link" href="#" target="_blank">give your feedback (opens in a new tab).</a></span>
+      </p>
+  </div>
+
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "/index"
+      },
+      {
+        text: "Explore categories",
+        href: "/explore-categories"
+      },
+      {
+        text: "Funding",
+        href: "../category/funding"
+      },
+      {
+        text: "Core maths premium"
+      }
+    ]
+  }) }}
+
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters">
+      <span class="govuk-caption-l">Task</span>
+      <h1 class="govuk-heading-l">Core maths premium</h1>
+      <p class="govuk-body-l">Track the jobs you need to do to manage your core maths premium and view information and resources that can help you.</p>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters govuk-prototype-kit-common-templates-mainstream-guide-body">
+
+      <nav class="moj-sub-navigation" aria-label="Sub navigation">
+        <ul class="moj-sub-navigation__list">
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link tab-link" aria-current="page" href="#upcoming-tasks">Upcoming tasks</a>
+          </li>
+          <li class="moj-sub-navigation__item">
+            <a class="moj-sub-navigation__link tab-link" href="#previous-tasks">Previous 12 months</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="calendar tab-content active" id="upcoming-tasks">
+        <div class="calendar-section-heading">
+          <h2 class="govuk-heading-m">Upcoming tasks</h2>
+          <span class="govuk-caption-s">Last updated: 10 September 2025</span>
+        </div>
+        <div class="calendar month">
+          <ul class="govuk-task-list task">
+            <li class="govuk-task-list__item govuk-task-list__item--with-link">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="#" >
+                  Check the allocation calculation toolkit
+                </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">The toolkit show you the data we have used to calculate your funding each year.</span>
+                </div>
+                <div class="date-card task">
+                  <span class="govuk-body-s">Available Sep 2025. <strong>No due date.</strong></span>
+                </div>
+              </div>
+              <div class="govuk-task-list__status" >
+                <!-- <strong class="govuk-tag govuk-tag--blue">
+                  Incomplete
+                </strong> -->
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="calendar tab-content" id="previous-tasks">
+        <div class="calendar-section-heading">
+            <h2 class="govuk-heading-m">Previous 12 months</h2>
+            <span class="govuk-caption-s">Last updated: 10 December 2024</span>
+        </div>
+        <div class="calendar month">
+          <ul class="govuk-task-list task">
+            <li class="govuk-task-list__item govuk-task-list__item--with-link">
+              <div class="govuk-task-list__name-and-hint">
+                <a class="govuk-link govuk-task-list__link" href="#" >
+                  Review weekly ESFA updates
+                </a>
+                <div class="govuk-task-list__hint">
+                  <span class="govuk-body-s">The update includes the latest information, changes and actions on 16 to 19 funding.</span>
+                </div>
+                <div class="date-card task">
+                  <span class="govuk-body-s">Available Sep 2025. <strong>No due date.</strong></span>
+                </div>
+              </div>
+              <div class="govuk-task-list__status" >
+                <!-- <strong class="govuk-tag govuk-tag--blue">
+                  Incomplete
+                </strong> -->
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-quarter">
+      <aside class="govuk-prototype-kit-common-templates-related-items" role="complementary">
+        <div class="guidance-sidebar">
+          <h2 class="govuk-heading-s">
+            Guidance and support
+          </h2>
+          <ul class="govuk-list">
+            <li class="category-padding">
+              <a class="govuk-link" href="https://www.gov.uk/government/publications/16-to-19-funding-core-maths-premium/16-to-19-funding-core-maths-premium" target="_blank">
+                  16 to 19 funding: core maths premium guidance
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="relatedlinks-sidebar">
+          <h2 class="govuk-heading-s">
+            Related tasks
+          </h2>
+          <ul class="govuk-list">
+            <li class="category-padding">
+              <a class="govuk-link" href="#">
+                  School census
+              </a>
+            </li>
+            <li class="category-padding">
+              <a class="govuk-link" href="#">
+                  Advanced maths premium
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-sidebar">
+          <h2 class="govuk-heading-s">
+            Contact us
+          </h2>
+          <details class="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                Contact us for help
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              Contact us using the <a href="https://customerhelpportal.education.gov.uk/" target="_blank">customer help portal (opens in a new tab)</a>.
+            </div>
+          </details>
+       </div>
+      </aside>
+    </div>
+  </main>
+</div>
+
+{% endblock %}
