@@ -1,0 +1,222 @@
+{% extends "layouts/main.html" %}
+
+{% set currentPage = "explore-categories" %}
+
+{% block pageTitle %}
+  Plan and fund estate projects – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+          <strong class="govuk-tag govuk-phase-banner__content__tag">Beta</strong>
+          <span class="govuk-phase-banner__text">This is a new service. Help us improve it and <a class="govuk-link" href="#" target="_blank">give your feedback (opens in a new tab).</a></span>
+      </p>
+  </div>
+
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "/index"
+      },
+      {
+        text: "Explore categories",
+        href: "/explore-categories"
+      },
+      {
+        text: "Estates",
+        href: "/category/estates"
+      },
+      {
+        text: "Plan and fund estate projects"
+      }
+    ]
+  }) }}
+
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters">
+      <span class="govuk-caption-l">Estates</span>
+      <h1 class="govuk-heading-l">Plan and fund estate projects</h1>
+      <p class="govuk-body-l">Find out how to plan and fund work across your estate.</p>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters govuk-prototype-kit-common-templates-mainstream-guide-body">
+      
+      <div class="explore-categories fullpage">
+        <h2 class="govuk-heading-m">Explore all tasks and support</h2>
+        <ul class="govuk-task-list">
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Condition Improvement Fund (CIF)
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Information for eligible academies, sixth-form colleges and voluntary-aided (VA) schools about the Condition Improvement Fund (CIF).</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Connect the classroom funding
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Find out about the programme to upgrade wifi networks in schools and who can take part.</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Design and construction standards
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Access guidance and tools to help with the design and construction of school and further education
+college buildings.</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Emergency school improvement fund
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Funding to support schools facing unexpected or imminent failure to improve in areas such as leadership, governance, safeguarding, human resources and finance.</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                General annual grant (GAG)
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Understand how the Education and Skills Funding Agency (ESFA) has calculated your 2024 to 2025 academic year funding.</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Plan and organise your estate resources
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Read advice on budgeting, governance, procurement and emergency planning procedures.</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Plan, manage and deliver estate projects
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Learn more about planning, managing and delivering all sizes of estate projects.</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Prepare for private finance initiative (PFI) contract expiry
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Read guidance on how to manage your PFI expiry and service transition.</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Report on School Condition Allowance (SCA) and basic need funding
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">You must submit information about projects you have completed using SCA and basic need funding.</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                School capital funding
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Find out about different types of capital funding for maintaining and improving the condition of
+school buildings and land.</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                School rebuilding programme
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Learn how the government prioritises and delivers major rebuilding and refurbishment projects for
+schools and sixth-form colleges in England.</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-quarter">
+      <aside class="govuk-prototype-kit-common-templates-related-items" role="complementary">
+        <!-- <div class="filter-sidebar">
+          <div class="filter-header">
+            <h2 class="govuk-heading-s">Filter</h2>
+          </div>
+          <div class="filter-selection">
+            <h2 class="govuk-heading-s">Selected filters</h2>
+            <div class="selected-filters-container">
+            </div>
+          </div>
+          <div class="filter-main">
+            <div class="govuk-form-group category">
+              <fieldset class="govuk-fieldset">
+                <details class="govuk-details">
+                  <summary class="govuk-details__summary">
+                    <span class="govuk-details__summary-text">Type</span>
+                  </summary>
+                  <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="guidance" name="guidance" type="checkbox" value="guidance">
+                      <label class="govuk-label govuk-checkboxes__label" for="guidance">Guidance</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="mandatory-task" name="mandatory-task" type="checkbox" value="mandatory-task">
+                      <label class="govuk-label govuk-checkboxes__label" for="mandatory-task">Mandatory task</label>
+                    </div>
+                  </div>
+                </details>
+              </fieldset>
+            </div>
+            <div class="govuk-button-group">
+              <button type="button" class="govuk-button" id="apply-filters">Apply filters</button>
+              <a class="govuk-link clear-all-link" href="#">Clear all</a>
+            </div>
+          </div>
+        </div> -->
+        <div class="contact-sidebar">
+          <h2 class="govuk-heading-s" id="subsection-title">Contact us</h2>
+          <details class="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">Contact us for help</span>
+            </summary>
+            <div class="govuk-details__text">Contact us using the <a href="https://customerhelpportal.education.gov.uk/" target="_blank">customer help portal (opens in a new tab)</a>. </div>
+          </details>
+        </div>
+      </aside>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

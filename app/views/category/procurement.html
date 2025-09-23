@@ -1,0 +1,184 @@
+{% extends "layouts/main.html" %}
+
+{% set currentPage = "explore-categories" %}
+
+{% block pageTitle %}
+  Procurement – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+          <strong class="govuk-tag govuk-phase-banner__content__tag">Beta</strong>
+          <span class="govuk-phase-banner__text">This is a new service. Help us improve it and <a class="govuk-link" href="#" target="_blank">give your feedback (opens in a new tab).</a></span>
+      </p>
+  </div>
+
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "/index"
+      },
+      {
+        text: "Explore categories",
+        href: "/explore-categories"
+      },
+      {
+        text: "Procurement"
+      }
+    ]
+  }) }}
+
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters">
+      <span class="govuk-caption-l">Category</span>
+      <h1 class="govuk-heading-l">Procurement</h1>
+      <p class="govuk-body-l">View tasks and guidance that can help your school make better financial decisions when you’re buying goods and services.</p> 
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters govuk-prototype-kit-common-templates-mainstream-guide-body">
+      
+      <div class="explore-categories fullpage">
+        <h2 class="govuk-heading-m">Explore all tasks and support</h2>
+        <ul class="govuk-task-list">
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Copyright licences
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Supports compliance and school activities</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Financial benchmarking
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Supports decision making</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Financial management systems (FMS)
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Supports management and decision making</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Get help buying for schools
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Supports decision making and buying activities</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Improving school technology
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Supports school improvement</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Procurement policy
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Mandatory task</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Public Sector Procurement Act
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Mandatory task</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Related party transactions
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Mandatory task</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Risk protection arrangement (RPA)
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Mandatory task if you've joined the RPA</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                School management information system (MIS)
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Supports management and decision making</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                School resource management advisers (SRMAs)
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Supports school improvement</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-quarter">
+      <aside class="govuk-prototype-kit-common-templates-related-items" role="complementary">
+        <h2 class="govuk-heading-s" id="subsection-title">
+          Contact us
+        </h2>
+        <details class="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Contact us for help
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          Contact us using the <a href="https://customerhelpportal.education.gov.uk/" target="_blank">customer help portal (opens in a new tab)</a>.
+        </div>
+      </details>
+      </aside>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

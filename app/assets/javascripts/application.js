@@ -127,16 +127,19 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
 //FILTERS & PAGINATION
 document.addEventListener('DOMContentLoaded', () => {
-    const applyButton = document.getElementById('apply-filters');
-    const clearAllLink = document.querySelector('.clear-all-link');
-    const selectedContainer = document.querySelector('.selected-filters-container');
-    const checkboxes = document.querySelectorAll('.govuk-checkboxes__input');
-    const tabContainers = document.querySelectorAll('.calendar.tab-content');
-    const tabLinks = document.querySelectorAll('.tab-link');
+  // Only run this code if there are calendar tabs AND filter checkboxes
+  const checkboxes = document.querySelectorAll('.govuk-checkboxes__input');
+  const tabContainers = document.querySelectorAll('.calendar.tab-content');
+  if (!tabContainers.length || !checkboxes.length) return;
 
-    const TASKS_PER_PAGE = 10;
+  const applyButton = document.getElementById('apply-filters');
+  const clearAllLink = document.querySelector('.clear-all-link');
+  const selectedContainer = document.querySelector('.selected-filters-container');
+  const tabLinks = document.querySelectorAll('.tab-link');
+  const TASKS_PER_PAGE = 10;
 
     // ----------------------
     // Setup "No tasks found" and pagination container

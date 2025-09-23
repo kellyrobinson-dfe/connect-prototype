@@ -1,0 +1,300 @@
+{% extends "layouts/main.html" %}
+
+{% set currentPage = "explore-categories" %}
+
+{% block pageTitle %}
+  All tasks – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+          <strong class="govuk-tag govuk-phase-banner__content__tag">Beta</strong>
+          <span class="govuk-phase-banner__text">This is a new service. Help us improve it and <a class="govuk-link" href="#" target="_blank">give your feedback (opens in a new tab).</a></span>
+      </p>
+  </div>
+
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "/index"
+      },
+      {
+        text: "Explore categories",
+        href: "/explore-categories"
+      },
+      {
+        text: "All tasks"
+      }
+    ]
+  }) }}
+
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters">
+      <span class="govuk-caption-l">Category</span>
+      <h1 class="govuk-heading-l">All tasks</h1>
+      <p class="govuk-body-l">See all your tasks, returns and policies from DfE.</p> 
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters govuk-prototype-kit-common-templates-mainstream-guide-body">
+      
+      <div class="explore-categories fullpage">
+        <!-- A-Z Navigation -->
+        <ul class="govuk-list govuk-list--inline" id="az-nav">
+          <li><a class="govuk-link" href="#hash">#</a></li>
+          <li><a class="govuk-link" href="#A">A</a></li>
+          <li><a class="govuk-link" href="#B">B</a></li>
+          <li><a class="govuk-link" href="#C">C</a></li>
+          <li>D</li>
+          <li><a class="govuk-link" href="#E">E</a></li>
+          <li>F</li>
+          <li><a class="govuk-link" href="#G">G</a></li>
+          <li><a class="govuk-link" href="#H">H</a></li>
+          <li>I</li>
+          <li>J</li>
+          <li>K</li>
+          <li><a class="govuk-link" href="#L">L</a></li>
+          <li><a class="govuk-link" href="#M">M</a></li>
+          <li><a class="govuk-link" href="#N">N</a></li>
+          <li>O</li>
+          <li><a class="govuk-link" href="#P">P</a></li>
+          <li>Q</li>
+          <li>R</li>
+          <li><a class="govuk-link" href="#S">S</a></li>
+          <li><a class="govuk-link" href="#T">T</a></li>
+          <li><a class="govuk-link" href="#U">U</a></li>
+          <li>V</li>
+          <li>W</li>
+          <li>X</li>
+          <li>Y</li>
+          <li>Z</li>
+        </ul>
+
+        <!-- Task List Sections -->
+        <h2 class="govuk-heading-m" id="hash">#</h2>
+        <ul class="govuk-task-list">
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">16 to 19 Bursary Funding</a>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">16 to 19 national funding formula</a>
+            </div>
+          </li>
+        </ul>
+
+        <h2 class="govuk-heading-m" id="A">A</h2>
+        <ul class="govuk-task-list">
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">Academy Trust Handbook updates</a>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">Accounts return</a>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">Advanced maths premium</a>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">Audited financial statements</a>
+            </div>
+          </li>
+        </ul>
+
+        <h2 class="govuk-heading-m" id="B">B</h2>
+        <ul class="govuk-task-list">
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">Budget forecast return (BFR)</a>
+            </div>
+          </li>
+        </ul>
+
+        <h2 class="govuk-heading-m" id="C">C</h2>
+        <ul class="govuk-task-list">
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">Condition Improvement Fund</a>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">Connect the classroom funding</a>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">Core maths premium</a>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">Core schools budget grant (CSBG)</a>
+            </div>
+          </li>
+        </ul>
+
+        <h2 class="govuk-heading-m" id="E">E</h2>
+        <ul class="govuk-task-list">
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">Early years initial teacher training</a>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">Emergency school improvement fund (non-capital)</a>
+            </div>
+          </li>
+        </ul>
+
+        <h2 class="govuk-heading-m" id="G">G</h2>
+        <ul class="govuk-task-list">
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">General Annual Grant</a>
+            </div>
+          </li>
+        </ul>
+
+        <h2 class="govuk-heading-m" id="H">H</h2>
+        <ul class="govuk-task-list">
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">High needs place changes</a>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">High value courses premium</a>
+            </div>
+          </li>
+        </ul>
+
+        <h2 class="govuk-heading-m" id="L">L</h2>
+        <ul class="govuk-task-list">
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">Land and buildings collection tool (LBCT)</a>
+            </div>
+          </li>
+        </ul>
+
+        <h2 class="govuk-heading-m" id="M">M</h2>
+        <ul class="govuk-task-list">
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">Maths and English funding</a>
+            </div>
+          </li>
+        </ul>
+
+        <h2 class="govuk-heading-m" id="N">N</h2>
+        <ul class="govuk-task-list">
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">National professional qualifications (NPQ) funding</a>
+            </div>
+          </li>
+        </ul>
+
+        <h2 class="govuk-heading-m" id="P">P</h2>
+        <ul class="govuk-task-list">
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">PE and sport premium</a>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">Pupil premium</a>
+            </div>
+          </li>
+        </ul>
+
+        <h2 class="govuk-heading-m" id="S">S</h2>
+        <ul class="govuk-task-list">
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">School census</a>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">School resource management self-assessment checklist (SRMSAC)</a>
+            </div>
+          </li>
+        </ul>
+
+        <h2 class="govuk-heading-m" id="T">T</h2>
+        <ul class="govuk-task-list">
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">T Level industry placement funding</a>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">Teachers' pay additional grant (TPAG)</a>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">Teachers' pension employer contribution grant (TPECG)</a>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">Teaching internships programme</a>
+            </div>
+          </li>
+        </ul>
+
+        <h2 class="govuk-heading-m" id="U">U</h2>
+        <ul class="govuk-task-list">
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">Universal infant free school meals</a>
+            </div>
+          </li>
+        </ul>
+
+
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-quarter">
+      <aside class="govuk-prototype-kit-common-templates-related-items" role="complementary">
+        <h2 class="govuk-heading-s" id="subsection-title">
+          Contact us
+        </h2>
+        <details class="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Contact us for help
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          Contact us using the <a href="https://customerhelpportal.education.gov.uk/" target="_blank">customer help portal (opens in a new tab)</a>.
+        </div>
+      </details>
+      </aside>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

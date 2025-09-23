@@ -3,7 +3,7 @@
 {% set currentPage = "explore-categories" %}
 
 {% block pageTitle %}
-  Explore categories – {{ serviceName }} – GOV.UK Prototype Kit
+  Pupils – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
 {% block beforeContent %}
@@ -22,7 +22,11 @@
         href: "/index"
       },
       {
-        text: "Explore categories"
+        text: "Explore categories",
+        href: "/explore-categories"
+      },
+      {
+        text: "Pupils"
       }
     ]
   }) }}
@@ -32,9 +36,9 @@
 {% block content %}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-three-quarters">
-      <span class="govuk-caption-l">Academy Name</span>
-      <h1 class="govuk-heading-l">Explore categories</h1>
-      <p class="govuk-body-l">View required tasks and optional guidance by category.</p>
+      <span class="govuk-caption-l">Category</span>
+      <h1 class="govuk-heading-l">Pupils</h1>
+      <p class="govuk-body-l">Your tasks for managing pupils and student policies.</p> 
     </div>
   </div>
 
@@ -42,72 +46,45 @@
     <div class="govuk-grid-column-three-quarters govuk-prototype-kit-common-templates-mainstream-guide-body">
       
       <div class="explore-categories fullpage">
-        
+        <h2 class="govuk-heading-m">Explore all tasks and funding</h2>
         <ul class="govuk-task-list">
           <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
             <div class="govuk-task-list__name-and-hint">
-              <a class="govuk-link govuk-task-list__link" href="category/all-tasks.html">
-                All tasks
-              </a>
-            </div>
-          </li>
-          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
-            <div class="govuk-task-list__name-and-hint">
-              <a class="govuk-link govuk-task-list__link" href="category/academy-trust-handbook.html">
-                Academy Trust Handbook
+              <a class="govuk-link govuk-task-list__link" href="#">
+                High needs place changes
               </a>
               <div class="govuk-task-list__hint">
-                <span class="govuk-body-s">Includes tasks related to the requirements set out in the Academy Trust Handbook.</span>
+                <span class="govuk-body-s">Automatic fund</span>
               </div>
             </div>
           </li>
           <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
             <div class="govuk-task-list__name-and-hint">
-              <a class="govuk-link govuk-task-list__link" href="category/estates.html">
-                Estates
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Pupil premium
               </a>
               <div class="govuk-task-list__hint">
-                <span class="govuk-body-s">Includes help with managing your estate.</span>
+                <span class="govuk-body-s">Automatic fund</span>
               </div>
             </div>
           </li>
           <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
             <div class="govuk-task-list__name-and-hint">
-              <a class="govuk-link govuk-task-list__link" href="category/finance.html">
-                Finance
+              <a class="govuk-link govuk-task-list__link" href="#">
+                School census
               </a>
               <div class="govuk-task-list__hint">
-                <span class="govuk-body-s">Includes school census and financial management suggestions.</span>
+                <span class="govuk-body-s">Mandatory task</span>
               </div>
             </div>
           </li>
           <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
             <div class="govuk-task-list__name-and-hint">
-              <a class="govuk-link govuk-task-list__link" href="category/funding.html">
-                Funding
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Universal infant free school meals
               </a>
               <div class="govuk-task-list__hint">
-                <span class="govuk-body-s">Includes different types of funding you may be able to receive and how to apply.</span>
-              </div>
-            </div>
-          </li>
-          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
-            <div class="govuk-task-list__name-and-hint">
-              <a class="govuk-link govuk-task-list__link" href="category/procurement.html">
-                Procurement
-              </a>
-              <div class="govuk-task-list__hint">
-                <span class="govuk-body-s">Includes get help buying, recommended systems and improving technology.</span>
-              </div>
-            </div>
-          </li>
-          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
-            <div class="govuk-task-list__name-and-hint">
-              <a class="govuk-link govuk-task-list__link" href="category/pupils.html">
-                Pupils
-              </a>
-              <div class="govuk-task-list__hint">
-                <span class="govuk-body-s">Includes requirements for managing finance and funding for your pupils.</span>
+                <span class="govuk-body-s">Automatic fund</span>
               </div>
             </div>
           </li>

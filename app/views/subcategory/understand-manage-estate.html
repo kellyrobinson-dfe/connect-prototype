@@ -1,0 +1,169 @@
+{% extends "layouts/main.html" %}
+
+{% set currentPage = "explore-categories" %}
+
+{% block pageTitle %}
+  Understand and manage your estate – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+          <strong class="govuk-tag govuk-phase-banner__content__tag">Beta</strong>
+          <span class="govuk-phase-banner__text">This is a new service. Help us improve it and <a class="govuk-link" href="#" target="_blank">give your feedback (opens in a new tab).</a></span>
+      </p>
+  </div>
+
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "/index"
+      },
+      {
+        text: "Explore categories",
+        href: "/explore-categories"
+      },
+      {
+        text: "Estates",
+        href: "/category/estates"
+      },
+      {
+        text: "Understand and manage your estate"
+      }
+    ]
+  }) }}
+
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters">
+      <span class="govuk-caption-l">Estates</span>
+      <h1 class="govuk-heading-l">Understand and manage your estate</h1>
+      <p class="govuk-body-l">Understand how to effectively assess and manage your estate.</p>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters govuk-prototype-kit-common-templates-mainstream-guide-body">
+      
+      <div class="explore-categories fullpage">
+        <h2 class="govuk-heading-m">Explore all tasks and support</h2>
+        <ul class="govuk-task-list">
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Condition Data Collection 2 (CDC2) programme
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Learn about the DfE's CDC2 programme, which collects data on the condition of school buildings and informs funding decisions.</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Managing older buildings
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Guidance to help you identify building systems and prioritise maintenance of buildings within your school estate.</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Net capacity assessment (NCA) programme
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Find out how the NCA programme supports accurate and up-to-date information on pupil capacity in schools, when site visits wil take place and how to read your NCA report.</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Risk protection arrangement (RPA) for schools
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Learn how the RPA provides an alternative to commercial insurance for all academies.</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Submit a school land transaction proposal
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Find out when you'll need to involve the Secretary of State for Education and which forms you'll need to submit.</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Understand and manage your land and buildings
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Find out the information you should have about your estate, how to use it, and when to update it.</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-quarter">
+      <aside class="govuk-prototype-kit-common-templates-related-items" role="complementary">
+        <!-- <div class="filter-sidebar">
+          <div class="filter-header">
+            <h2 class="govuk-heading-s">Filter</h2>
+          </div>
+          <div class="filter-selection">
+            <h2 class="govuk-heading-s">Selected filters</h2>
+            <div class="selected-filters-container">
+            </div>
+          </div>
+          <div class="filter-main">
+            <div class="govuk-form-group category">
+              <fieldset class="govuk-fieldset">
+                <details class="govuk-details">
+                  <summary class="govuk-details__summary">
+                    <span class="govuk-details__summary-text">Type</span>
+                  </summary>
+                  <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="guidance" name="guidance" type="checkbox" value="guidance">
+                      <label class="govuk-label govuk-checkboxes__label" for="guidance">Guidance</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="mandatory-task" name="mandatory-task" type="checkbox" value="mandatory-task">
+                      <label class="govuk-label govuk-checkboxes__label" for="mandatory-task">Mandatory task</label>
+                    </div>
+                  </div>
+                </details>
+              </fieldset>
+            </div>
+            <div class="govuk-button-group">
+              <button type="button" class="govuk-button" id="apply-filters">Apply filters</button>
+              <a class="govuk-link clear-all-link" href="#">Clear all</a>
+            </div>
+          </div>
+        </div> -->
+        <div class="contact-sidebar">
+          <h2 class="govuk-heading-s" id="subsection-title">Contact us</h2>
+          <details class="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">Contact us for help</span>
+            </summary>
+            <div class="govuk-details__text">Contact us using the <a href="https://customerhelpportal.education.gov.uk/" target="_blank">customer help portal (opens in a new tab)</a>. </div>
+          </details>
+        </div>
+      </aside>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

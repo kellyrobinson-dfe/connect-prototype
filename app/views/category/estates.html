@@ -3,7 +3,7 @@
 {% set currentPage = "explore-categories" %}
 
 {% block pageTitle %}
-  Explore categories – {{ serviceName }} – GOV.UK Prototype Kit
+  Estates – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
 {% block beforeContent %}
@@ -22,7 +22,11 @@
         href: "/index"
       },
       {
-        text: "Explore categories"
+        text: "Explore categories",
+        href: "/explore-categories"
+      },
+      {
+        text: "Estates"
       }
     ]
   }) }}
@@ -32,9 +36,9 @@
 {% block content %}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-three-quarters">
-      <span class="govuk-caption-l">Academy Name</span>
-      <h1 class="govuk-heading-l">Explore categories</h1>
-      <p class="govuk-body-l">View required tasks and optional guidance by category.</p>
+      <span class="govuk-caption-l">Category</span>
+      <h1 class="govuk-heading-l">Estates</h1>
+      <p class="govuk-body-l">View tasks and support that can help with managing your estate.</p>
     </div>
   </div>
 
@@ -42,72 +46,72 @@
     <div class="govuk-grid-column-three-quarters govuk-prototype-kit-common-templates-mainstream-guide-body">
       
       <div class="explore-categories fullpage">
-        
+        <h2 class="govuk-heading-m">Explore topics</h2>
         <ul class="govuk-task-list">
           <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
             <div class="govuk-task-list__name-and-hint">
-              <a class="govuk-link govuk-task-list__link" href="category/all-tasks.html">
-                All tasks
+              <a class="govuk-link govuk-task-list__link" href="#">
+                All tasks and guidance
               </a>
             </div>
           </li>
           <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
             <div class="govuk-task-list__name-and-hint">
-              <a class="govuk-link govuk-task-list__link" href="category/academy-trust-handbook.html">
-                Academy Trust Handbook
+              <a class="govuk-link govuk-task-list__link" href="/subcategory/plan-fund-estate-projects.html">
+                Plan and fund estate projects
               </a>
               <div class="govuk-task-list__hint">
-                <span class="govuk-body-s">Includes tasks related to the requirements set out in the Academy Trust Handbook.</span>
+                <span class="govuk-body-s">Find out how to plan and fund work across your estate.</span>
               </div>
             </div>
           </li>
           <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
             <div class="govuk-task-list__name-and-hint">
-              <a class="govuk-link govuk-task-list__link" href="category/estates.html">
-                Estates
+              <a class="govuk-link govuk-task-list__link" href="/subcategory/responsibilities-of-estate-management.html">
+                Responsibilities of estate management
               </a>
               <div class="govuk-task-list__hint">
-                <span class="govuk-body-s">Includes help with managing your estate.</span>
+                <span class="govuk-body-s">Discover the standards, training and tools to help you manage your estate.</span>
               </div>
             </div>
           </li>
           <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
             <div class="govuk-task-list__name-and-hint">
-              <a class="govuk-link govuk-task-list__link" href="category/finance.html">
-                Finance
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Safety and compliance
               </a>
               <div class="govuk-task-list__hint">
-                <span class="govuk-body-s">Includes school census and financial management suggestions.</span>
+                <span class="govuk-body-s">Learn how to deal with safety issues and meet your legal responsibilities.</span>
               </div>
             </div>
           </li>
           <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
             <div class="govuk-task-list__name-and-hint">
-              <a class="govuk-link govuk-task-list__link" href="category/funding.html">
-                Funding
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Sustainability and energy efficiency
               </a>
               <div class="govuk-task-list__hint">
-                <span class="govuk-body-s">Includes different types of funding you may be able to receive and how to apply.</span>
+                <span class="govuk-body-s">Discover how to improve sustainability and plan for environmental risks.</span>
               </div>
             </div>
           </li>
           <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
             <div class="govuk-task-list__name-and-hint">
-              <a class="govuk-link govuk-task-list__link" href="category/procurement.html">
-                Procurement
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Technology management and improvement
               </a>
               <div class="govuk-task-list__hint">
-                <span class="govuk-body-s">Includes get help buying, recommended systems and improving technology.</span>
+                <span class="govuk-body-s">Explore how to plan, improve and meet standards for technology in your school.</span>
               </div>
             </div>
           </li>
           <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
             <div class="govuk-task-list__name-and-hint">
-              <a class="govuk-link govuk-task-list__link" href="category/pupils.html">
-                Pupils
+              <a class="govuk-link govuk-task-list__link" href="/subcategory/understand-manage-estate.html">
+                Understand and manage your estate
               </a>
               <div class="govuk-task-list__hint">
-                <span class="govuk-body-s">Includes requirements for managing finance and funding for your pupils.</span>
+                <span class="govuk-body-s">Understand how to effectively assess and manage your estate.</span>
               </div>
             </div>
           </li>

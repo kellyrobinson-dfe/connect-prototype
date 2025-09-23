@@ -1264,6 +1264,7 @@ a.govuk-link:visited {
 .moj-sub-navigation__item {
 	display: block;
 	margin-top: -1px;
+	margin-bottom: -1px;
 	box-shadow: inset 0 -1px 0 $govuk-border-colour;
 	font-size: 19px;
 
@@ -1837,4 +1838,27 @@ aside {
 
 .govuk-task-list__name-and-hint {
 	padding-right: 100px;
+}
+
+.page-intro {
+	margin-bottom: 70px;
+}
+
+#az-nav {
+  margin-bottom: 1em;
+  padding-left: 0;
+}
+
+#az-nav li {
+  display: inline-block;
+  margin-right: 0.75em;
+}
+
+#az-nav li:last-child {
+  margin-right: 0; 
+}
+
+#az-nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
 }

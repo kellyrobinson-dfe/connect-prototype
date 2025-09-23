@@ -1,0 +1,159 @@
+{% extends "layouts/main.html" %}
+
+{% set currentPage = "explore-categories" %}
+
+{% block pageTitle %}
+  Responsibilities of estate management – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+          <strong class="govuk-tag govuk-phase-banner__content__tag">Beta</strong>
+          <span class="govuk-phase-banner__text">This is a new service. Help us improve it and <a class="govuk-link" href="#" target="_blank">give your feedback (opens in a new tab).</a></span>
+      </p>
+  </div>
+
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "/index"
+      },
+      {
+        text: "Explore categories",
+        href: "/explore-categories"
+      },
+      {
+        text: "Estates",
+        href: "/category/estates"
+      },
+      {
+        text: "Responsibilities of estate management"
+      }
+    ]
+  }) }}
+
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters">
+      <span class="govuk-caption-l">Estates</span>
+      <h1 class="govuk-heading-l">Responsibilities of estate management</h1>
+      <p class="govuk-body-l">Discover guidance, tools and information to help you manage your estate.</p>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters govuk-prototype-kit-common-templates-mainstream-guide-body">
+      
+      <div class="explore-categories fullpage">
+        <h2 class="govuk-heading-m">Explore all tasks and support</h2>
+        <ul class="govuk-task-list">
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Estate management: competency framework and relevant training
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Find out about the standards, practices and processes of effective estate management.</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Good estate management for schools (GEMS)
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Read the manual on how to manage your school buildings and land.</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Land and buildings collection tool (LBCT)
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Guide to help academy trusts and diocesan users submit their land and buildings collection tool.</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                School estate management standards
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Understand the skills and competencies required for estate management roles, and relevant training and qualifications available.</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="#">
+                Tools and checklists to manage your estate effectively
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Use tools and checklists for topics including governance, strategy, maintenance, energy efficiency and flood risk.</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-quarter">
+      <aside class="govuk-prototype-kit-common-templates-related-items" role="complementary">
+        <!-- <div class="filter-sidebar">
+          <div class="filter-header">
+            <h2 class="govuk-heading-s">Filter</h2>
+          </div>
+          <div class="filter-selection">
+            <h2 class="govuk-heading-s">Selected filters</h2>
+            <div class="selected-filters-container">
+            </div>
+          </div>
+          <div class="filter-main">
+            <div class="govuk-form-group category">
+              <fieldset class="govuk-fieldset">
+                <details class="govuk-details">
+                  <summary class="govuk-details__summary">
+                    <span class="govuk-details__summary-text">Type</span>
+                  </summary>
+                  <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="guidance" name="guidance" type="checkbox" value="guidance">
+                      <label class="govuk-label govuk-checkboxes__label" for="guidance">Guidance</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="mandatory-task" name="mandatory-task" type="checkbox" value="mandatory-task">
+                      <label class="govuk-label govuk-checkboxes__label" for="mandatory-task">Mandatory task</label>
+                    </div>
+                  </div>
+                </details>
+              </fieldset>
+            </div>
+            <div class="govuk-button-group">
+              <button type="button" class="govuk-button" id="apply-filters">Apply filters</button>
+              <a class="govuk-link clear-all-link" href="#">Clear all</a>
+            </div>
+          </div>
+        </div> -->
+        <div class="contact-sidebar">
+          <h2 class="govuk-heading-s" id="subsection-title">Contact us</h2>
+          <details class="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">Contact us for help</span>
+            </summary>
+            <div class="govuk-details__text">Contact us using the <a href="https://customerhelpportal.education.gov.uk/" target="_blank">customer help portal (opens in a new tab)</a>. </div>
+          </details>
+        </div>
+      </aside>
+    </div>
+  </main>
+</div>
+
+{% endblock %}
