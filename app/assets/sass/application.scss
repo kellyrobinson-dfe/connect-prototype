@@ -3,10 +3,19 @@
 // https://prototype-kit.service.gov.uk/docs/adding-css-javascript-and-images
 // 
 
+@import 'node_modules/dfe-frontend/packages/dfefrontend';
+
 * {
 	font-family: "Inter", Arial, sans-serif !important;
 }
 
+.govuk-width-container {
+    @include govuk-width-container;
+}
+
+.govuk-phase-banner__content, .govuk-phase-banner__text {
+    display: inline;
+}
 a.govuk-link:visited {
 	color: #1d70b8;
 	/* GOV.UK blue */
@@ -1799,4 +1808,33 @@ aside {
 	.dfe-feedback-banner--flex button {
 		width: 100%;
 	}
+}
+
+//SUPPORT CARDS
+.support {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #b1b4b6;
+	margin-bottom: 40px;
+
+	&:last-of-type {
+		border-bottom: none;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	.dfe-grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(277.5px, 1fr));
+    }
+}
+
+.support2 {
+	margin-bottom: 50px;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+.govuk-task-list__name-and-hint {
+	padding-right: 100px;
 }

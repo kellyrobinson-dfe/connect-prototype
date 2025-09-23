@@ -1,0 +1,392 @@
+{% extends "layouts/main.html" %}
+
+{% set currentPage = "support" %}
+
+{% block pageTitle %}
+  Support – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+          <strong class="govuk-tag govuk-phase-banner__content__tag">Beta</strong>
+          <span class="govuk-phase-banner__text">This is a new service. Help us improve it and <a class="govuk-link" href="#" target="_blank">give your feedback (opens in a new tab).</a></span>
+      </p>
+  </div>
+
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "/index"
+      },
+      {
+        text: "Support"
+      }
+    ]
+  }) }}
+
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters">
+      <span class="govuk-caption-l">Academy Name</span>
+      <h1 class="govuk-heading-l">Support</h1>
+      <p class="govuk-body-l">Resources and guidance that can help guide your decisions or provide support with your mandatory tasks.</p>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters govuk-prototype-kit-common-templates-mainstream-guide-body">
+
+      <!-- <section id="network" class="support">
+        <h2 class="govuk-heading-m">Networks</h2>
+        <p>Networks help professionals connect and share information with each other. There are many school business professional networks that provide support on work activities, including finance and buying for schools.</p>
+        <p>
+            <a href="https://www.gov.uk/government/publications/join-or-create-a-network-for-school-business-professionals">Find, join or create a network</a>
+        </p>
+      </section>
+      <section id="data-insights" class="support">
+        <h2 class="govuk-heading-m">Data and insights</h2>
+        <p>Get data and insights that can help you with finance plans and decisions.</p>
+        <p>All links to data and insight services open in new tabs.</p>
+        <div class="dfe-grid-container">
+          <div class="dfe-card">
+              <div class="dfe-card-container">
+                <h3 class="govuk-heading-s">
+                    <a href="#" class="govuk-link govuk-link--no-visited-state dfe-card-link--header">Access the Financial Benchmarking and Insights Tool</a>
+                </h3>
+                <p>Compare your school or trust’s income and expenses with other schools in England.</p>
+              </div>
+          </div>
+          <div class="dfe-card">
+              <div class="dfe-card-container">
+                <h3 class="govuk-heading-s">
+                    <a href="#" class="govuk-link govuk-link--no-visited-state dfe-card-link--header">Compare financial management systems</a>
+                </h3>
+                <p>Use DfE’s financial management system (FMS) comparison matrix to choose the best FMS for you.</p>
+              </div>
+          </div>
+          <div class="dfe-card">
+              <div class="dfe-card-container">
+                <h3 class="govuk-heading-s">
+                    <a href="#" class="govuk-link govuk-link--no-visited-state dfe-card-link--header">View your education data</a>
+                </h3>
+                <p>Financial insights for your school as part of the education data service.</p>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section id="statutory-guidance" class="support">
+        <h2 class="govuk-heading-m">Statutory guidance</h2>
+        <p>Read about statutory guidance to find out what you must do to comply with the law.</p>
+        <p>All links to statutory guidance open in new tabs.</p>
+        <div class="dfe-grid-container">
+          <div class="dfe-card">
+              <div class="dfe-card-container">
+                <h3 class="govuk-heading-s">
+                    <a href="#" class="govuk-link govuk-link--no-visited-state dfe-card-link--header">Academy Trust Handbook</a>
+                </h3>
+                <p>An overarching framework academy trusts must comply with as a condition of their funding agreement.</p>
+              </div>
+          </div>
+          <div class="dfe-card">
+              <div class="dfe-card-container">
+                <h3 class="govuk-heading-s">
+                    <a href="#" class="govuk-link govuk-link--no-visited-state dfe-card-link--header">Keeping children safe in education</a>
+                </h3>
+                <p>Statutory guidance for schools on safeguarding children and safer recruitment.</p>
+              </div>
+          </div>
+          <div class="dfe-card">
+              <div class="dfe-card-container">
+                <h3 class="govuk-heading-s">
+                    <a href="#" class="govuk-link govuk-link--no-visited-state dfe-card-link--header">Public procurement policy</a>
+                </h3>
+                <p>Directives, regulations, policies and guidance relating to the procurement of supplies, services and works for the public sector.</p>
+              </div>
+          </div>
+          <div class="dfe-card">
+              <div class="dfe-card-container">
+                <h3 class="govuk-heading-s">
+                    <a href="#" class="govuk-link govuk-link--no-visited-state dfe-card-link--header">School admissions code</a>
+                </h3>
+                <p>Statutory guidance schools must follow when carrying out duties relating to admissions.</p>
+              </div>
+          </div>
+          <div class="dfe-card">
+              <div class="dfe-card-container">
+                <h3 class="govuk-heading-s">
+                    <a href="#" class="govuk-link govuk-link--no-visited-state dfe-card-link--header">SEND code of practice</a>
+                </h3>
+                <p>Guidance on the special educational needs and disability (SEND) system for children and young people.</p>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section id="advice-support" class="support">
+        <h2 class="govuk-heading-m">Advice and support</h2>
+        <p>Read advice and support that could help with the work you do as a school leader, academy trust professional or school business manager. </p>
+        <p>All links to advice and support open in new tabs.</p>
+        <div class="dfe-grid-container">
+          <div class="dfe-card">
+              <div class="dfe-card-container">
+                <h3 class="govuk-heading-s">
+                    <a href="#" class="govuk-link govuk-link--no-visited-state dfe-card-link--header">Buying for schools</a>
+                </h3>
+                <p>Get impartial help and advice from procurement specialists.</p>
+              </div>
+          </div>
+          <div class="dfe-card">
+              <div class="dfe-card-container">
+                <h3 class="govuk-heading-s">
+                    <a href="#" class="govuk-link govuk-link--no-visited-state dfe-card-link--header">DfE help centre</a>
+                </h3>
+                <p>Help articles and guidance for customers using DfE services.</p>
+              </div>
+          </div>
+          <div class="dfe-card">
+              <div class="dfe-card-container">
+                <h3 class="govuk-heading-s">
+                    <a href="#" class="govuk-link govuk-link--no-visited-state dfe-card-link--header">Financial good practice guides for trusts</a>
+                </h3>
+                <p>Good practice guidance for academy trust financial management and assurance.</p>
+              </div>
+          </div>
+          <div class="dfe-card">
+              <div class="dfe-card-container">
+                <h3 class="govuk-heading-s">
+                    <a href="#" class="govuk-link govuk-link--no-visited-state dfe-card-link--header">Funding allocation</a>
+                </h3>
+                <p>A guide for schools opening as academies to estimate their revenue funding.</p>
+              </div>
+          </div>
+          <div class="dfe-card">
+              <div class="dfe-card-container">
+                <h3 class="govuk-heading-s">
+                    <a href="#" class="govuk-link govuk-link--no-visited-state dfe-card-link--header">Integrated curriculum and financial planning (ICFP)</a>
+                </h3>
+                <p>Guidance on how you can use ICFP to create the best curriculum for pupils with available funding.</p>
+              </div>
+          </div>
+          <div class="dfe-card">
+              <div class="dfe-card-container">
+                <h3 class="govuk-heading-s">
+                    <a href="#" class="govuk-link govuk-link--no-visited-state dfe-card-link--header">Risk protection arrangement</a>
+                </h3>
+                <p>The risk protection arrangement (RPA) is an alternative to commercial insurance. Joining might save you time and money.</p>
+              </div>
+          </div>
+          <div class="dfe-card">
+              <div class="dfe-card-container">
+                <h3 class="govuk-heading-s">
+                    <a href="#" class="govuk-link govuk-link--no-visited-state dfe-card-link--header">School resource management advisers</a>
+                </h3>
+                <p>A school resource management adviser can help you manage school finances and resources.</p>
+              </div>
+          </div>
+        </div>
+      </section> -->
+
+      <section id="network" class="support2">
+        <h2 class="govuk-heading-m">Networks</h2>
+        <p>Networks help professionals connect and share information with each other. There are many school business professional networks that provide support on work activities, including finance and buying for schools.</p>
+        <p>
+            <a class="govuk-link" href="https://www.gov.uk/government/publications/join-or-create-a-network-for-school-business-professionals" target="_blank">Find, join or create a network <span class="govuk-visually-hidden">opens in a new tab</span></a>
+        </p>
+      </section>
+      <section id="data-insights" class="support2">
+        <h2 class="govuk-heading-m">Data and insights</h2>
+        <p>Get data and insights that can help you with finance plans and decisions.</p>
+        <p>All links to data and insight services open in new tabs.</p>
+        <ul class="govuk-task-list">
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="http://financial-benchmarking-and-insights-tool.education.gov.uk/" target="_blank">
+                Access the Financial Benchmarking and Insights Tool <span class="govuk-visually-hidden">opens in a new tab</span>
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Compare your school or trust’s income and expenses with other schools in England.</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="https://www.gov.uk/government/publications/choosing-a-trusts-financial-management-system-fms/guide-to-the-fms-comparison-matrix" target="_blank">
+                Compare financial management systems <span class="govuk-visually-hidden">opens in a new tab</span>
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Use DfE’s financial management system (FMS) comparison matrix to choose the best FMS for you.</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="https://viewyourdata.education.gov.uk/" target="_blank">
+                View your education data <span class="govuk-visually-hidden">opens in a new tab</span>
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Financial insights for your school as part of the education data service.</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section id="statutory-guidance" class="support2">
+        <h2 class="govuk-heading-m">Statutory guidance</h2>
+        <p>Read about statutory guidance to find out what you must do to comply with the law.</p>
+        <p>All links to statutory guidance open in new tabs.</p>
+        <ul class="govuk-task-list">
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="https://www.gov.uk/government/publications/academy-trust-handbook" target="_blank">
+                Academy Trust Handbook <span class="govuk-visually-hidden">opens in a new tab</span>
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">An overarching framework academy trusts must comply with as a condition of their funding agreement.</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="https://www.gov.uk/government/publications/keeping-children-safe-in-education--2" target="_blank">
+                Keeping children safe in education <span class="govuk-visually-hidden">opens in a new tab</span>
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Statutory guidance for schools on safeguarding children and safer recruitment.</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="https://www.gov.uk/guidance/public-sector-procurement-policy" target="_blank">
+                Public procurement policy <span class="govuk-visually-hidden">opens in a new tab</span>
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Directives, regulations, policies and guidance relating to the procurement of supplies, services and works for the public sector.</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="https://www.gov.uk/government/publications/school-admissions-code--2" target="_blank">
+                School admissions code <span class="govuk-visually-hidden">opens in a new tab</span>
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Statutory guidance schools must follow when carrying out duties relating to admissions.</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="https://www.gov.uk/government/publications/send-code-of-practice-0-to-25" target="_blank">
+                SEND code of practice <span class="govuk-visually-hidden">opens in a new tab</span>
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Guidance on the special educational needs and disability (SEND) system for children and young people.</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section id="advice-support" class="support2">
+        <h2 class="govuk-heading-m">Advice and support</h2>
+        <p>Read advice and support that could help with the work you do as a school leader, academy trust professional or school business manager. </p>
+        <p>All links to advice and support open in new tabs.</p>
+        <ul class="govuk-task-list">
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="https://www.gov.uk/guidance/get-help-buying-for-schools" target="_blank">
+                Buying for schools <span class="govuk-visually-hidden">opens in a new tab</span>
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Get impartial help and advice from procurement specialists.</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="https://customerhelp.education.gov.uk/hc/en-gb/categories/360002506639-Articles" target="_blank">
+                DfE help centre <span class="govuk-visually-hidden">opens in a new tab</span>
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Help articles and guidance for customers using DfE services.</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="https://www.gov.uk/government/collections/academy-trust-financial-management-good-practice-guides" target="_blank">
+                Financial good practice guides for trusts <span class="govuk-visually-hidden">opens in a new tab</span>
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Good practice guidance for academy trust financial management and assurance.</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="https://www.gov.uk/government/publications/estimating-your-academy-funding-allocation" target="_blank">
+                Funding allocation <span class="govuk-visually-hidden">opens in a new tab</span>
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">A guide for schools opening as academies to estimate their revenue funding.</span>
+              </div>
+            </div>
+          </li>
+          <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="https://www.gov.uk/guidance/integrated-curriculum-and-financial-planning-icfp" target="_blank">
+                Integrated curriculum and financial planning (ICFP) <span class="govuk-visually-hidden">opens in a new tab</span>
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">Guidance on how you can use ICFP to create the best curriculum for pupils with available funding.</span>
+              </div>
+            </div>
+          </li>
+           <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="https://www.gov.uk/guidance/join-the-risk-protection-arrangement-rpa-for-schools" target="_blank">
+                Risk protection arrangement <span class="govuk-visually-hidden">opens in a new tab</span>
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">The risk protection arrangement (RPA) is an alternative to commercial insurance. Joining might save you time and money.</span>
+              </div>
+            </div>
+          </li>
+           <li class="govuk-task-list__item explore govuk-task-list__item--with-link">
+            <div class="govuk-task-list__name-and-hint">
+              <a class="govuk-link govuk-task-list__link" href="https://www.gov.uk/government/publications/the-school-resource-management-advisers-srma-programme" target="_blank">
+                School resource management advisers <span class="govuk-visually-hidden">opens in a new tab</span>
+              </a>
+              <div class="govuk-task-list__hint">
+                <span class="govuk-body-s">A school resource management adviser can help you manage school finances and resources.</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div class="govuk-grid-column-one-quarter">
+      <aside class="govuk-prototype-kit-common-templates-related-items" role="complementary">
+        <h2 class="govuk-heading-s" id="subsection-title">
+          Contact us
+        </h2>
+        <details class="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Contact us for help
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          Contact us using the <a href="https://customerhelpportal.education.gov.uk/" target="_blank">customer help portal (opens in a new tab)</a>.
+        </div>
+      </details>
+      </aside>
+    </div>
+  </main>
+</div>
+
+{% endblock %}
