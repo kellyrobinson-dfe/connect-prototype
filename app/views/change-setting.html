@@ -46,11 +46,19 @@
       <div class="govuk-form-group">
         <fieldset class="govuk-fieldset">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-            <h2 class="govuk-fieldset__heading">Which setting would you like to view as?
+            <h2 class="govuk-fieldset__heading">How would you like to view DfE Connect?
               <span class="govuk-body-m change-hint">Showing 92 settings</span>
             </h2>
           </legend>
           <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="whereDoYouLive" name="whereDoYouLive" type="radio" value="england">
+              <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
+                <strong>Academy Trust</strong>
+                <span class="govuk-body-s change-hint">Full academy trust view</span>
+                <span class="govuk-body-s change-hint">URN: 010101, UKPRN: 01010101, UPN: 010101</span>
+              </label>
+            </div>
             <div class="govuk-radios__item">
               <input class="govuk-radios__input" id="whereDoYouLive" name="whereDoYouLive" type="radio" value="england">
               <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
@@ -268,6 +276,26 @@
                       Most viewed
                       </label>
                     </div>
+                  </div>
+                </details>
+              </fieldset>
+            </div>
+            <div class="govuk-form-group category">
+              <fieldset class="govuk-fieldset">
+                <details class="govuk-details">
+                  <summary class="govuk-details__summary">
+                    <span class="govuk-details__summary-text">Academy type</span>
+                  </summary>
+                  <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="handbook" name="handbook" type="checkbox" value="handbook">
+                      <label class="govuk-label govuk-checkboxes__label" for="handbook">Pre-16 (66)</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="estates" name="estates" type="checkbox" value="estates">
+                      <label class="govuk-label govuk-checkboxes__label" for="estates">Post-16 (26)</label>
+                    </div>
+                    
                   </div>
                 </details>
               </fieldset>

@@ -18,9 +18,7 @@
 }
 a.govuk-link:visited {
 	color: #1d70b8;
-	/* GOV.UK blue */
 	text-decoration: underline;
-	/* optional, match default GOV.UK style */
 }
 
 .govuk-width-container {
@@ -103,12 +101,6 @@ a.govuk-link:visited {
 	position: relative;
 }
 
-// .gem-c-layout-super-navigation-header__button-container {
-//     top: -61px;
-//     position: absolute;
-//     right: 0;
-// }
-
 @media (max-width: 40.0525em) {
 	.gem-c-layout-super-navigation-header__button-container {
 		margin-right: -15px;
@@ -127,10 +119,6 @@ a.govuk-link:visited {
 	padding-bottom: 12px;
 	padding-top: 16px;
 }
-
-// .gem-c-layout-super-navigation-header__content {
-//     width: 100%;
-// }
 
 .gem-c-layout-super-navigation-header__navigation-item,
 .gem-c-layout-super-navigation-header__search-item {
@@ -332,7 +320,7 @@ a.govuk-link:visited {
 	position: relative;
 	margin: 0;
 	vertical-align: top;
-	font-family: "GDS Transport", arial, sans-serif;
+	font-family: "Inter", arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
